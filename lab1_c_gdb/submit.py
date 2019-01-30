@@ -52,7 +52,7 @@ def get_server():
     if DEBUG:
         return DEBUG_URL
     # get from github
-    return 'http://autograders.cc-3.site/'
+    return 'https://autograders.cc-3.site/'
 
 
 # submit code
