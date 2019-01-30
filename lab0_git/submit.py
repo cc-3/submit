@@ -3,18 +3,9 @@ import sys
 import zipfile
 import requests
 
-TITLE = '''   ___       __                        __
-  / _ |__ __/ /____  ___ ________ ____/ /__ ____
- / __ / // / __/ _ \/ _ `/ __/ _ `/ _  / -_) __/
-/_/ |_\_,_/\__/\___/\_, /_/  \_,_/\_,_/\__/_/
-                   /___/
-
-               Machine Structures
-      Great Ideas in Computer Architecture'''
-
 
 # repo name
-NAME = ''
+NAME = 'lab0_git'
 
 # debug grader
 DEBUG = False
@@ -31,7 +22,7 @@ def get_files():
 def zip_lab(token):
     print('zipping source files...')
     # create zip file
-    filename = '%s-%s.zip' % (NAME, token)
+    filename = 'autograder/submit.zip'
     zip = zipfile.ZipFile(filename, 'w', zipfile.ZIP_DEFLATED)
     try:
         # get all files to zip
@@ -66,10 +57,6 @@ def get_server():
 
 # submit code
 def submit(token):
-    print(TITLE)
-    print('')
-    print('Lab: ' + NAME)
-    print('')
     filename = zip_lab(token)
     try:
         info = {'repo': NAME, 'token': token}
