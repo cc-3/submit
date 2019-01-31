@@ -2,6 +2,7 @@ import os
 import sys
 import zipfile
 import requests
+from glob import glob
 
 
 # repo name
@@ -15,13 +16,7 @@ DEBUG_URL = 'http://localhost:5000/'
 
 # get files to zip
 def get_files():
-    return [
-        'ex1/flip_bit.c',
-        'ex1/get_bit.c',
-        'ex1/set_bit.c',
-        'ex2/lfsr_calculate.c',
-        'ex3/vector.c'
-    ]
+    return list(glob('ex*/*'))
 
 
 # zip lab files
