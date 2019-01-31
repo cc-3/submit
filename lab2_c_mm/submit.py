@@ -6,7 +6,7 @@ from glob import glob
 
 
 # repo name
-NAME = 'lab1_c_gdb'
+NAME = 'lab2_c_mm'
 
 # debug grader
 DEBUG = False
