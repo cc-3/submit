@@ -19,7 +19,7 @@ def get_files():
         'ex1/ex1.txt',
         'ex2/ex2.txt',
         'ex3/factorial.s',
-        'ex3/list_map.s'
+        'ex4/list_map.s'
     ]
 
 
