@@ -5,7 +5,7 @@ import requests
 
 
 # repo name
-NAME = 'proj1_c_riscv'
+NAME = 'lab4_riscv'
 
 # debug grader
 DEBUG = False
