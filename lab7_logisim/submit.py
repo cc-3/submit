@@ -15,7 +15,7 @@ DEBUG_URL = 'http://localhost:5000/'
 
 # get files to zip
 def get_files():
-    return ['ALU.circ']
+    return ['alu.circ']
 
 
 # zip lab files
