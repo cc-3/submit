@@ -15,7 +15,7 @@ DEBUG_URL = 'http://localhost:5000/'
 
 # get files to zip
 def get_files():
-    return ['ex1.txt', 'ex2.txt', 'sum.c']
+    return ['ex1.txt', 'sum.c']
 
 
 # zip lab files
